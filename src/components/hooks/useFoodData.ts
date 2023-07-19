@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import axios, { AxiosPromise } from "axios"
-import { FoodData } from "../../../interface/FoodData";
+import { FoodData } from "../../interface/FoodData";
 
 const API_URL = "http://localhost:8080"
 
