@@ -8,8 +8,26 @@
 
 .card-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
+}
+
+@media only screen and (max-width:1200px){
+    .card-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .card-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .card-grid{
+        grid-template-columns: 1fr;
+    }
 }
 
 .container button {
