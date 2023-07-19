@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css'
 import { Card } from './components/card/card';
 import { useFoodData } from './components/hooks/useFoodData';
-import { FoodData } from './interface/FoodData';
 import { CreateModal } from './components/create-modal/create-modal';
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
           />
         )}
       </div>
-      {isModalOpen && <CreateModal/>}
+      {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
       <button onClick={handleOpenModal}>Novo</button>
     </div>
   )
