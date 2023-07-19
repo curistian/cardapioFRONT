@@ -1,14 +1,15 @@
 import './App.css'
 import { Card } from './components/card/card';
+import { useFoodData } from './components/card/hooks/useFoodData';
 import { FoodData } from './interface/FoodData';
 
 function App() {
-  const data: FoodData[] = []; 
+  const { data }= useFoodData(); 
   return (
     <div className="Container">
       <h1>Cardápio</h1>
       <div className="card-grid">
-        {data.map(foodData => 
+        {data?.map(foodData => 
           <Card 
             price={foodData.price} 
             title={foodData.title} 
