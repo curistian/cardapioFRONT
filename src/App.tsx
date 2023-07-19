@@ -6,7 +6,7 @@ import { FoodData } from './interface/FoodData';
 function App() {
   const { data }= useFoodData(); 
   return (
-    <div className="Container">
+    <div className="container">
       <h1>Cardápio</h1>
       <div className="card-grid">
         {data?.map(foodData => 
